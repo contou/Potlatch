@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sync_interval_key">
+        <item>One Hour</item>
+        <item>30 Minutes</item>
+        <item>15 Minutes</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="sync_interval_value">
+        <item>3600000</item>
+        <item>1800000</item>
+        <item>900000</item>
+        <item>2147483647</item>
+    </string-array>
+</resources>   

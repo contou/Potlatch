@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rectangle_bg"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/element_spacing_normal"
+    android:paddingBottom="@dimen/element_spacing_normal"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/profile_name"
+        android:text="@string/about_eula"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/profile_image"/>
+    <TextView
+        android:id="@+id/profile_gender"
+        android:layout_marginTop="@dimen/element_spacing_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name"
+        android:layout_toRightOf="@id/profile_image"/>
+    <TextView
+        android:id="@+id/profile_status"
+        android:text="@string/something"
+        android:layout_marginTop="@dimen/element_spacing_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_gender"
+        android:layout_toRightOf="@id/profile_image"/>
+    <com.cong.potlatch.ui.widget.BezelImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/leader_board_profile_image_size"
+        android:layout_height="@dimen/leader_board_profile_image_size"
+        android:src="@drawable/person_image_empty"
+        android:scaleType="centerCrop"
+        app:maskDrawable="@drawable/circle_mask" />
+
+    <ImageView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

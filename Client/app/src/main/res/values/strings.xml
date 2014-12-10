@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Potlatch</string>
+    <string name="day_title_today">Today</string>
+    <string name="day_title_yesterday">Yesterday</string>
+    <string name="day_title_tomorrow">tomorrow</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_login">Login</string>
+
+    <!-- Shown in the 'About' window of the app. -->
+    <string name="about_body">
+<![CDATA[
+        <b>Google I/O 2014</b><br>
+        Version %s<br><br>
+        <a href="http://m.google.com/utos">Terms of Service</a><br><br>
+        <a href="http://www.google.com/policies/privacy/">Privacy Policy</a>
+    ]]>
+    </string>
+
+    <!-- Shown as a link in the About screen of the app; user can click to see the EULA. -->
+    <string name="about_eula">End User License Agreement</string>
+
+    <!-- Shown as a link in the About screen of the app; user can click it to see the licenses. -->
+    <string name="about_licenses">Open Source Licenses</string>
+
+    <!-- Title text for dialog screen about the application -->
+    <string name="title_about">About</string>
+
+    <!-- A single button shown on informative popups, like EULA, open source licenses and About -->
+    <string name="ok">OK</string>
+    <string name="eula_legal_text">TODO: change this text!</string>
+
+    <!-- Accessibility description saying that the app's navigation drawer has been closed -->
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Accessibility description saying that the app's navigation drawer has been opened -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="navdrawer_item_test">test</string>
+    <string name="points">0</string>
+    <string name="description_text_hint">Describe this gift</string>
+    <string name="write_comment_text_hint">Write a new comment</string>
+    <string name="image">image</string>
+    <string name="title">title</string>
+    <string name="id">id</string>
+    <string name="navdrawer_item_gifts">Gifts</string>
+    <string name="navdrawer_item_create_gift">Create Gift</string>
+    <string name="title_activity_create_gift">Create gift</string>
+    <string name="title_browse_gift">All Gifts</string>
+    <string name="login_password">pass</string>
+    <string name="user_name">admin</string>
+    <string name="navdrawer_item_setting">Setting</string>
+    <string name="refresh_data">Refresh data</string>
+    <string name="zore">0</string>
+    <string name="success">Success!</string>
+    <string name="network_error">Network not available!</string>
+    <string name="title_activity_comment">Comment</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="description_search">search</string>
+    <string name="navdrawer_item_categories">Categories</string>
+    <string name="title_activity_category">Categories</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="navdrawer_item_top_user">Leader Board</string>
+    <string name="title_activity_browse_users">Leader Board</string>
+    <string name="action_mute">Mute</string>
+    <string name="share_to_category">Choose a category</string>
+    <string name="title_text_hint">Title</string>
+    <string name="default_category">Default</string>
+    <string name="title_activity_register">Register</string>
+    <string name="search">Search</string>
+    <string name="action_register">Register</string>
+    <string name="account_required_title">Account Required</string>
+    <string name="account_required_message">To use this functionality,you must login.</string>
+    <string name="not_now">Not now</string>
+    <string name="action_logout">Logout</string>
+
+
+    <!--preferences-->
+    <string name="should_show_inappropriate_title">Show Inappropriate Items</string>
+    <string name="should_show_inappropriate_description">Display inappropriate items flag by you!</string>
+    <string name="should_search_gift_title">Search gift online</string>
+    <string name="should_search_gift_online_description">Search gift online</string>
+    <string name="gift_title">Title</string>
+    <string name="something">Something</string>
+
+</resources>

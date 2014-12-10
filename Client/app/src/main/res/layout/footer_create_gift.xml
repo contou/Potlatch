@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/white_rect_bg"
+    android:paddingLeft="@dimen/keyline_1_minus_8dp"
+    android:paddingRight="@dimen/keyline_1_minus_8dp"
+    tools:showIn="@layout/activity_create_gift">
+
+    <ImageButton
+        android:id="@+id/take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_mood_grey"
+        android:background="@drawable/transparent_bg"
+        android:padding="@dimen/ic_edging_size" />
+
+
+
+    <ImageButton
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/keyline_1_minus_8dp"
+        android:src="@drawable/ic_send_grey"
+        android:background="@drawable/transparent_bg"
+        android:onClick="uploadClicked"
+        android:padding="@dimen/ic_edging_size" />
+</RelativeLayout>

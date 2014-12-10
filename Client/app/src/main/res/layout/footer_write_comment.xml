@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:layout_gravity="bottom"
+    android:background="@drawable/white_rect_bg"
+    android:paddingLeft="@dimen/keyline_1_minus_8dp"
+    android:paddingRight="@dimen/keyline_1_minus_8dp">
+    <ImageButton
+        android:id="@+id/emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_mood_grey"
+        android:background="@drawable/transparent_bg"
+        android:padding="@dimen/ic_edging_size" />
+
+    <EditText
+        android:id="@+id/edit_text_comment"
+        android:hint="@string/write_comment_text_hint"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_toRightOf="@id/emoji"
+        android:layout_toLeftOf="@+id/send"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/transparent_bg"
+        android:padding="@dimen/ic_edging_size" />
+
+
+    <ImageButton
+        android:id="@+id/send"
+        android:onClick="sendCommentClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/keyline_1_minus_8dp"
+        android:src="@drawable/ic_send_grey"
+        android:background="@drawable/transparent_bg"
+        android:padding="@dimen/ic_edging_size" />
+</RelativeLayout>

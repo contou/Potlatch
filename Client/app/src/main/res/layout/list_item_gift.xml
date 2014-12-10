@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/keyline_1"
+    card_view:cardCornerRadius="3dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/gift_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="center"
+            android:src="@drawable/default_cover"
+            android:text="@string/image" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/gift_title"-->
+            <!--style="@style/TextAppearance.AppCompat.Title"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/keyline_1"-->
+            <!--android:text="@string/title"-->
+        <!--android:fontFamily="@string/font_fontFamily_medium"-->
+        <!--android:textSize="@dimen/text_size_large" />-->
+
+        <TextView
+            android:id="@+id/gift_title"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:paddingLeft="@dimen/keyline_1"
+            android:paddingTop="@dimen/keyline_1"
+            android:paddingRight="@dimen/keyline_1_minus_4dp"
+            android:text="@string/gift_title" />
+        <TextView
+            android:id="@+id/gift_description"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingLeft="@dimen/keyline_1"
+            android:paddingTop="@dimen/keyline_1_minus_8dp"
+            android:paddingBottom="@dimen/keyline_1_minus_8dp"
+            android:paddingRight="@dimen/keyline_1"
+            android:text="@string/description_text_hint" />
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/keyline_1"
+            android:layout_marginRight="@dimen/keyline_1"
+            android:layout_marginTop="7dp"
+            android:background="#e5e5e5"
+            android:gravity="start|center_vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/keyline_1_minus_8dp"
+            android:paddingRight="@dimen/keyline_1_minus_8dp">
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/like"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/keyline_1_minus_8dp"-->
+                <!--android:background="@drawable/rectangle_bg"-->
+                <!--android:padding="@dimen/ic_edging_size"-->
+                <!--android:src="@drawable/ic_thumb_up_grey" />-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/unlike"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_marginLeft="@dimen/keyline_1_minus_8dp"-->
+                <!--android:layout_toRightOf="@+id/like"-->
+                <!--android:background="@drawable/rectangle_bg"-->
+                <!--android:padding="@dimen/ic_edging_size"-->
+                <!--android:src="@drawable/ic_thumb_down_grey" />-->
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Title"
+                android:id="@+id/gift_points"
+                android:text="@string/zore"
+                android:textSize="@dimen/ic_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+                android:background="@drawable/rectangle_bg"
+                android:padding="@dimen/ic_edging_size"
+                android:drawableLeft="@drawable/ic_favorite" />
+
+            <TextView
+                android:id="@+id/comment"
+                android:textSize="@dimen/ic_text_size"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/keyline_1_minus_8dp"
+                android:background="@drawable/rectangle_bg"
+                android:padding="@dimen/ic_edging_size"
+                android:drawableLeft="@drawable/ic_comment_grey" />
+        </RelativeLayout>
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="7dp"
+            android:gravity="start|center_vertical" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

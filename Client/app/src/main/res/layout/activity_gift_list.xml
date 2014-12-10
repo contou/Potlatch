@@ -1,0 +1,80 @@
+<!--
+  Copyright 2014 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cong.potlatch.ui.BrowseGiftsActivity">
+
+    <!-- Main layout -->
+    <com.cong.potlatch.ui.widget.DrawShadowFrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        app:shadowDrawable="@drawable/header_shadow">
+
+            <com.cong.potlatch.ui.widget.MultiSwipeRefreshLayout
+                android:id="@+id/swipe_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <fragment
+                    android:id="@+id/gift_fragment"
+                    android:name="com.cong.potlatch.ui.BrowseGiftsFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_body"
+                    tools:layout="@layout/fragment_gift_list" />
+
+            </com.cong.potlatch.ui.widget.MultiSwipeRefreshLayout>
+        <FrameLayout
+            android:id="@+id/headerbar"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:fitsSystemWindows="true">
+
+            <include layout="@layout/toolbar_actionbar" />
+        </FrameLayout>
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/footerbar"
+            android:layout_gravity="bottom|right"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginRight ="@dimen/keyline_1_minus_8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/fab_background">
+
+            <ImageView android:id="@+id/add_schedule_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_camera_alt_white"
+                android:scaleType="center"
+                android:contentDescription="@null"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+    </com.cong.potlatch.ui.widget.DrawShadowFrameLayout>
+    <!--Nav drawer -->
+    <include layout="@layout/navdrawer" />
+
+</android.support.v4.widget.DrawerLayout>
